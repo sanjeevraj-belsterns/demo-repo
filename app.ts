@@ -14,6 +14,11 @@ const users: User[] = [
 ];
 
 // GET all users
+app.get("/hi", (req: Request, res: Response) => {
+  res.json("Hi");
+});
+
+// GET all users
 app.get("/users", (req: Request, res: Response) => {
   res.json(users);
 });
